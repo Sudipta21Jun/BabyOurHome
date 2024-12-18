@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Anniversary Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="window" onclick="toggleWindow()">
+        <div id="prank" class="hidden">
+            <h3>😂 You got pranked, Jun! Just kidding! Click again for something real!</h3>
+            <img src="https://via.placeholder.com/200/FFCCCB/FFFFFF?text=Gotcha!" alt="Prank Image" />
+        </div>
+        <div id="realWindow" class="hidden">
+            <h3 style="color: #FF4500;">Hey Jun 🌻</h3>
+            <p>Would you go on an online date with me to celebrate our 2-year anniversary on January 5th, 2025? 💖</p>
+            <button onclick="showSurprise()">YES!</button>
+        </div>
+    </div>
+
+    <div id="specialMessage" class="hidden">
+        <h1>🌟 Surprise! 🌟</h1>
+        <p>Thank you for these beautiful 2 years, Jun. Here's to many more adventures and memories together. 💕</p>
+        <div id="sunflowerAnimation"></div>
+        <img src="https://via.placeholder.com/200x200.png?text=💐+Sunflowers!" id="flower" alt="Sunflowers" />
+    </div>
+
+    <audio id="music" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

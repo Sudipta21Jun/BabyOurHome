@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('https://www.wallpaperflare.com/static/804/772/407/sunflowers-yellow-flowers-nature-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+#window {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#window:hover {
+    transform: scale(1.05);
+}
+.hidden {
+    display: none;
+}
+#specialMessage {
+    background: rgba(255, 255, 200, 0.9);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease;
+}
+#flower {
+    width: 150px;
+    margin-top: 15px;
+}
+#sunflowerAnimation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.pngkit.com/png/full/83-836443_sunflower-png-images-download-sunflowers-transparent-background.png') repeat;
+    animation: moveSunflowers 20s linear infinite;
+    z-index: -1;
+}
+@keyframes moveSunflowers {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 1000px;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
